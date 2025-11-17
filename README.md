@@ -5,19 +5,23 @@ api-gateway-wars/
 ├── docker-compose.yml
 ├── compose.override.yml # optional: local dev overrides
 ├── services/
-│ ├── user-service/
+│ ├── user/
+│ ├── app/
+│ ├── __init__.py
+│ ├── main.py
+│ ├── database.py
+│ ├── models.py
+│ ├── schemas.py
+│ └── routes/
+│ │    ├── __init__.py
+│ │    └── users.py
+│ ├── product/
 │ │ ├── app/
 │ │ │ ├── __init__.py
 │ │ │ └── main.py
 │ │ ├── requirements.txt
 │ │ └── Dockerfile
-│ ├── product-service/
-│ │ ├── app/
-│ │ │ ├── __init__.py
-│ │ │ └── main.py
-│ │ ├── requirements.txt
-│ │ └── Dockerfile
-│ └── order-service/
+│ └── order/
 │ ├── app/
 │ │ ├── __init__.py
 │ │ └── main.py
